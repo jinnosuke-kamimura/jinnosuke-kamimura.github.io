@@ -91,7 +91,7 @@ const japaneseContent = {
     labUrl: "https://www.bmc.ipc.i.u-tokyo.ac.jp/index.html",
     email: "5158231060kj [at] g.ecc.u-tokyo.ac.jp",
     location: "東京, 日本",
-    summary: "現在は、医療現場における術者の負担軽減を目的とした、空気圧制御を基盤とする手術支援ロボットの自律制御を研究しています。",
+    summary: "医療現場における術者の負担軽減を目的とした、空気圧制御を基盤とする手術支援ロボットの自律制御を研究しています。",
   },
   researchThemes: [
     { index: "01", title: "Surgical Robotics" },
@@ -319,7 +319,7 @@ const englishContent = {
     labUrl: "https://www.bmc.ipc.i.u-tokyo.ac.jp/index.html",
     email: "5158231060kj [at] g.ecc.u-tokyo.ac.jp",
     location: "Tokyo, Japan",
-    summary: "I currently research autonomous control of surgical support robots based on pneumatic control to reduce the burden on surgeons in clinical settings.",
+    summary: "I research autonomous control of surgical support robots based on pneumatic control to reduce the burden on surgeons in clinical settings.",
   },
   researchThemes: [
     { index: "01", title: "Surgical Robotics" },
