@@ -319,7 +319,7 @@ const englishContent = {
     labUrl: "https://www.bmc.ipc.i.u-tokyo.ac.jp/index.html",
     email: "5158231060kj [at] g.ecc.u-tokyo.ac.jp",
     location: "Tokyo, Japan",
-    summary: "I research autonomous control of surgical support robots based on pneumatic control to reduce the burden on surgeons in clinical settings.",
+    summary: "I research autonomous control of surgical robots based on pneumatic control to reduce the burden on surgeons in clinical settings.",
   },
   researchThemes: [
     { index: "01", title: "Surgical Robotics" },
