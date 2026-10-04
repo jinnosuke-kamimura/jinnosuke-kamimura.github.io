@@ -91,7 +91,7 @@ const japaneseContent = {
     labUrl: "https://www.bmc.ipc.i.u-tokyo.ac.jp/index.html",
     email: "5158231060kj [at] g.ecc.u-tokyo.ac.jp",
     location: "東京, 日本",
-    summary: "東京大学 大学院情報理工学系研究科 システム情報学専攻の博士課程1年で、川嶋研究室に所属しています。現在は、医療現場における術者の負担軽減を目的とした、空気圧制御を基盤とする手術支援ロボットの自律制御を研究しています。",
+    summary: "現在は、医療現場における術者の負担軽減を目的とした、空気圧制御を基盤とする手術支援ロボットの自律制御を研究しています。",
   },
   researchThemes: [
     { index: "01", title: "Surgical Robotics" },
@@ -319,7 +319,7 @@ const englishContent = {
     labUrl: "https://www.bmc.ipc.i.u-tokyo.ac.jp/index.html",
     email: "5158231060kj [at] g.ecc.u-tokyo.ac.jp",
     location: "Tokyo, Japan",
-    summary: "I am a first-year PhD student in the Department of Systems Information Science, Graduate School of Information Science and Technology, The University of Tokyo, and a member of the Kawashima Laboratory. I currently research autonomous control of surgical support robots based on pneumatic control to reduce the burden on surgeons in clinical settings.",
+    summary: "I currently research autonomous control of surgical support robots based on pneumatic control to reduce the burden on surgeons in clinical settings.",
   },
   researchThemes: [
     { index: "01", title: "Surgical Robotics" },
