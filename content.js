@@ -50,7 +50,7 @@ const japaneseContent = {
       titleSeparator: "　",
       issuedBy: "発行元",
       themeLabel: "テーマ：",
-      sourceLink: "公式情報",
+      sourceLink: "Source",
     },
     fellowships: {
       heading: "Fellowship",
