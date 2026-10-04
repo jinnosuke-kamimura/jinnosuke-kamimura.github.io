@@ -115,6 +115,23 @@
     return element;
   }
 
+  function createExternalArrow() {
+    const arrow = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    arrow.classList.add("link-arrow");
+    arrow.setAttribute("viewBox", "0 0 24 24");
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.setAttribute("focusable", "false");
+    arrow.setAttribute("fill", "none");
+    arrow.setAttribute("stroke", "currentColor");
+    arrow.setAttribute("stroke-width", "2");
+    arrow.setAttribute("stroke-linecap", "round");
+    arrow.setAttribute("stroke-linejoin", "round");
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M5 19L19 5M9 5H19V15");
+    arrow.append(path);
+    return arrow;
+  }
+
   function createExternalLink(label, href, className) {
     if (!href) {
       return null;
@@ -124,7 +141,7 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.append(document.createTextNode(label));
-    link.append(createElement("span", "link-arrow", "↗"));
+    link.append(createExternalArrow());
     return link;
   }
 

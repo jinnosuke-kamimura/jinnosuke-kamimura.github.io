@@ -245,6 +245,13 @@ a {
   text-underline-offset: 4px;
 }
 
+.link-arrow {
+  display: inline-block;
+  width: 0.88em;
+  height: 0.88em;
+  flex: 0 0 0.88em;
+}
+
 .home-content {
   max-width: 720px;
 }
