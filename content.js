@@ -207,13 +207,13 @@ const japaneseContent = {
     },
     {
       period: "2024–2026",
-      title: "修士(情報理工学)修了",
+      title: "修士（情報理工学）修了",
       organization: "東京大学・大学院情報理工学系研究科・システム情報学専攻",
       detail: "",
     },
     {
       period: "2020–2024",
-      title: "学士(工学)修了",
+      title: "学士（工学）修了",
       organization: "東京農工大学・工学部・機械システム工学科",
       detail: "",
     },
