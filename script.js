@@ -3,7 +3,6 @@
 
   const siteContent = window.siteContent || {};
   let content = siteContent;
-  const themeStorageKey = "jinnosuke-theme";
   const languageStorageKey = "jinnosuke-language";
 
   function query(selector) {
@@ -71,7 +70,6 @@
       }
     });
     updateLanguageToggle();
-    updateThemeToggle();
   }
 
   function setLanguage(nextLanguage) {
@@ -104,74 +102,6 @@
         setLanguage(getActiveLanguage() === "en" ? "ja" : "en");
       });
     }
-  }
-
-  function getStoredTheme() {
-    try {
-      const storedTheme = window.localStorage.getItem(themeStorageKey);
-      return storedTheme === "light" || storedTheme === "dark" ? storedTheme : null;
-    } catch (error) {
-      return null;
-    }
-  }
-
-  function getResolvedTheme() {
-    const explicitTheme = document.documentElement.dataset.theme;
-    if (explicitTheme === "light" || explicitTheme === "dark") {
-      return explicitTheme;
-    }
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
-
-  function updateThemeToggle() {
-    const themeToggle = query("[data-theme-toggle]");
-    if (!themeToggle) {
-      return;
-    }
-    const darkModeActive = getResolvedTheme() === "dark";
-    themeToggle.setAttribute("aria-pressed", String(darkModeActive));
-    themeToggle.setAttribute(
-      "aria-label",
-      darkModeActive ? getTranslation("theme.lightAction") : getTranslation("theme.darkAction")
-    );
-    const label = themeToggle.querySelector("[data-theme-label]");
-    if (label) {
-      label.textContent = darkModeActive ? getTranslation("theme.lightMode") : getTranslation("theme.darkMode");
-    }
-  }
-
-  function initTheme() {
-    const storedTheme = getStoredTheme();
-    if (storedTheme) {
-      document.documentElement.dataset.theme = storedTheme;
-    }
-    const themeToggle = query("[data-theme-toggle]");
-    if (themeToggle) {
-      themeToggle.addEventListener("click", function () {
-        const nextTheme = getResolvedTheme() === "dark" ? "light" : "dark";
-        document.documentElement.dataset.theme = nextTheme;
-        try {
-          window.localStorage.setItem(themeStorageKey, nextTheme);
-        } catch (error) {
-          // Private browsing can deny localStorage; the current page still changes.
-        }
-        updateThemeToggle();
-      });
-    }
-    if (window.matchMedia) {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      const handleSystemThemeChange = function () {
-        if (!document.documentElement.dataset.theme) {
-          updateThemeToggle();
-        }
-      };
-      if (mediaQuery.addEventListener) {
-        mediaQuery.addEventListener("change", handleSystemThemeChange);
-      } else if (mediaQuery.addListener) {
-        mediaQuery.addListener(handleSystemThemeChange);
-      }
-    }
-    updateThemeToggle();
   }
 
   function createElement(tagName, className, text) {
@@ -484,7 +414,6 @@
   }
 
   function init() {
-    initTheme();
     initLanguage();
     setText("[data-current-year]", String(new Date().getFullYear()));
   }
