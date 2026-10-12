@@ -7,7 +7,7 @@ const japaneseContent = {
     currentPosition: "現在の所属",
     affiliation: "所属",
     profileNote: "研究、エンジニアリング、\nその間にある問い。",
-    heroEyebrow: "研究者ポートフォリオ · 東京、日本",
+    heroEyebrow: "portfolio · 東京、日本",
     theme: {
       darkAction: "ダークテーマに切り替える",
       lightAction: "明るいテーマに切り替える",
@@ -76,8 +76,8 @@ const japaneseContent = {
       backToTop: "トップへ戻る",
     },
     meta: {
-      title: "Jinnosuke Kamimura | 研究者ポートフォリオ",
-      description: "Jinnosuke Kamimura の研究者ポートフォリオ",
+      title: "Jinnosuke Kamimura | portfolio",
+      description: "Jinnosuke Kamimura | portfolio",
     },
     noscript: "追加情報を表示するには JavaScript を有効にしてください。",
   },
@@ -235,7 +235,7 @@ const englishContent = {
     currentPosition: "Current position",
     affiliation: "Affiliation",
     profileNote: "Research, engineering,\nand the questions between them.",
-    heroEyebrow: "Research portfolio · Tokyo, Japan",
+    heroEyebrow: "portfolio · Tokyo, Japan",
     theme: {
       darkAction: "Switch to dark theme",
       lightAction: "Switch to light theme",
@@ -304,8 +304,8 @@ const englishContent = {
       backToTop: "Back to top",
     },
     meta: {
-      title: "Jinnosuke Kamimura | Research Portfolio",
-      description: "Research portfolio of Jinnosuke Kamimura",
+      title: "Jinnosuke Kamimura | portfolio",
+      description: "Jinnosuke Kamimura | portfolio",
     },
     noscript: "Please enable JavaScript to display additional information.",
   },
