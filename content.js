@@ -20,12 +20,13 @@ const japaneseContent = {
     },
     nav: {
       about: "About me",
+      researchInterests: "Research interests",
       research: "Research",
       papers: "Papers & Awards",
       publications: "Publications",
       awards: "Awards",
       projects: "Projects",
-      experience: "Experience",
+      experience: "Experience & education",
       contact: "Contact",
     },
     research: {
@@ -248,12 +249,13 @@ const englishContent = {
     },
     nav: {
       about: "About me",
+      researchInterests: "Research interests",
       research: "Research",
       papers: "Papers & Awards",
       publications: "Publications",
       awards: "Awards",
       projects: "Projects",
-      experience: "Experience",
+      experience: "Experience & education",
       contact: "Contact",
     },
     research: {
