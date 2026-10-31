@@ -539,7 +539,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   grid-column: 3;
-  grid-row: 1 / span 5;
+  grid-row: 1;
   gap: 14px;
   justify-content: flex-end;
 }
