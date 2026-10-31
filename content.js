@@ -101,6 +101,13 @@ const japaneseContent = {
   ],
   internationalConferences: [
     {
+      year: "2027年",
+      venue: "2027 IEEE/SICE International Symposium on System Integration (SII)",
+      title: "Position Control and Grasping Force Estimation of a Pneumatically Driven Surgical Forceps Without Position Sensors",
+      authors: "Masataka Nakamura, Jinnosuke Kamimura, Sota Takasugi, Kenji Kawashima",
+      citation: "2027 IEEE/SICE International Symposium on System Integration (SII), 2027.",
+    },
+    {
       year: "2026年",
       venue: "2026 IEEE/SICE International Symposium on System Integration (SII)",
       title: "Human-in-the-Loop Control of a Soft Pneumatic Exosuit for Step Width Guidance via Hip Abduction/Adduction.",
@@ -329,6 +336,13 @@ const englishContent = {
     { index: "03", title: "Physical AI" },
   ],
   internationalConferences: [
+    {
+      year: "2027",
+      venue: "2027 IEEE/SICE International Symposium on System Integration (SII)",
+      title: "Position Control and Grasping Force Estimation of a Pneumatically Driven Surgical Forceps Without Position Sensors",
+      authors: "Masataka Nakamura, Jinnosuke Kamimura, Sota Takasugi, Kenji Kawashima",
+      citation: "2027 IEEE/SICE International Symposium on System Integration (SII), 2027.",
+    },
     {
       year: "2026",
       venue: "2026 IEEE/SICE International Symposium on System Integration (SII)",
